@@ -1,0 +1,62 @@
+/* Pronti — Color tokens
+   Base palette lifted verbatim from styles.css :root in samiralejandro/pronti.
+   Pronti runs a scroll-driven duotone site: a light surface up top, a dark
+   surface for the lower two-thirds, joined by a "theme transition" section.
+   Both surfaces share the same three brand accents (cyan / fuchsia / violet). */
+
+:root {
+  /* ---- Base palette ---- */
+  --color-bg-dark: #05070b;
+  --color-bg-dark-soft: #0b1119;
+  --color-bg-light: #f7f9ff;
+  --color-bg-light-soft: #eef3ff;
+
+  --color-panel-dark: rgba(10, 16, 24, 0.82);
+  --color-panel-dark-strong: rgba(12, 18, 28, 0.96);
+  --color-panel-dark-alt: rgba(20, 12, 32, 0.9);
+  --color-panel-light: rgba(255, 255, 255, 0.82);
+  --color-panel-light-strong: rgba(255, 255, 255, 0.94);
+
+  --color-text-onDark: #edf3ff;
+  --color-text-onDark-muted: #6b7a94;
+  --color-text-onLight: #08111f;
+  --color-text-onLight-soft: #3a4a62;
+  --color-text-onLight-muted: #4d5d75;
+
+  --color-line-onDark: rgba(255, 255, 255, 0.08);
+  --color-line-onDark-strong: rgba(110, 231, 255, 0.22);
+  --color-line-onLight: rgba(8, 17, 31, 0.08);
+  --color-line-onLight-strong: rgba(138, 115, 255, 0.18);
+
+  /* ---- Brand accents (the three-color gradient signature) ---- */
+  --color-cyan: #6ee7ff;
+  --color-fuchsia: #ff5ec4;
+  --color-violet: #8a73ff;
+  --color-lime: #d8ff73;
+  --color-warm: #ffd3a2;
+
+  --gradient-brand: linear-gradient(135deg, var(--color-fuchsia) 0%, var(--color-violet) 100%);
+  --gradient-brand-wide: linear-gradient(135deg, var(--color-cyan) 0%, var(--color-violet) 52%, var(--color-fuchsia) 100%);
+
+  /* ---- Semantic aliases ---- */
+  --surface-page-light: var(--color-bg-light);
+  --surface-page-dark: var(--color-bg-dark);
+  --surface-card-light: var(--color-panel-light);
+  --surface-card-dark: var(--color-panel-dark);
+  --surface-nav: rgba(255, 255, 255, 0.72);
+  --surface-nav-dark: rgba(7, 11, 17, 0.76);
+
+  --text-primary: var(--color-text-onLight);
+  --text-primary-dark: var(--color-text-onDark);
+  --text-secondary: var(--color-text-onLight-soft);
+  --text-secondary-dark: var(--color-text-onDark-muted);
+  --text-kicker: var(--color-violet);
+  --text-kicker-dark: var(--color-cyan);
+
+  --border-default: var(--color-line-onLight);
+  --border-default-dark: var(--color-line-onDark);
+  --border-accent: var(--color-line-onLight-strong);
+
+  --focus-ring: 0 0 0 3px rgba(138, 115, 255, 0.5);
+  --focus-ring-onDark: 0 0 0 3px rgba(110, 231, 255, 0.5);
+}

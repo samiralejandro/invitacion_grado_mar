@@ -1,0 +1,38 @@
+/* Pronti — Spacing, radius, shadow & motion tokens */
+
+:root {
+  /* ---- Radius: everything is very round. Pills for buttons/chips, large
+     soft-squircle radii (30–50px) for panels and cards. Nothing under 18px. ---- */
+  --radius-sm: 18px;
+  --radius-md: 30px;
+  --radius-lg: 44px;
+  --radius-pill: 999px;
+
+  /* ---- Spacing scale (approximate 4px-adjacent scale actually used in source) ---- */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-7: 30px;
+  --space-8: 40px;
+  --space-9: 56px;
+  --space-10: 94px;
+
+  --page-gutter: clamp(18px, 2vw, 30px); /* @kind spacing */
+  --site-width: min(1440px, calc(100vw - (var(--page-gutter) * 2)));
+
+  /* ---- Shadow: soft, diffuse, colored by surface — never a hard black shadow ---- */
+  --shadow-dark: 0 28px 70px rgba(0, 0, 0, 0.34);
+  --shadow-light: 0 28px 78px rgba(19, 33, 61, 0.12);
+  --shadow-btn-primary: 0 18px 44px rgba(138, 115, 255, 0.22);
+  --shadow-btn-secondary: 0 16px 36px rgba(18, 31, 61, 0.08);
+
+  /* ---- Motion: eased, unhurried. No bounce, no spring. ---- */
+  --ease-standard: cubic-bezier(0.22, 1, 0.36, 1); /* @kind other */
+  --ease-intro: cubic-bezier(0.76, 0, 0.24, 1); /* @kind other */
+  --duration-fast: 0.25s; /* @kind other */
+  --duration-base: 0.4s; /* @kind other */
+  --duration-slow: 0.8s; /* @kind other */
+}

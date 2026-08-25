@@ -1,0 +1,34 @@
+/* Pronti — Type tokens
+   Display: Syne (geometric, tight tracking, heavy weight) — headlines only.
+   Body: Instrument Sans — everything else.
+   Both loaded from Google Fonts in the source site; @font-face mirrors that
+   here via woff2 files so the system works offline. */
+
+:root {
+  --font-display: "Syne", sans-serif;
+  --font-body: "Instrument Sans", sans-serif;
+
+  /* Display scale — tracks the clamp() values used across hero/section titles */
+  --text-display-xl: clamp(2.8rem, 5.5vw, 5.2rem);   /* hero title */
+  --text-display-lg: clamp(2.6rem, 5vw, 4.4rem);      /* section title */
+  --text-display-md: clamp(1.9rem, 2.6vw, 2.8rem);    /* card/panel heading */
+  --text-display-sm: 2rem;                             /* rail card h3 */
+
+  /* Body scale */
+  --text-body-lg: clamp(1.1rem, 2.05vw, 1.72rem);     /* hero support line */
+  --text-body-md: 1.06rem;                             /* section copy */
+  --text-body-base: 0.96rem;                           /* default paragraph */
+  --text-body-sm: 0.94rem;
+  --text-body-xs: 0.84rem;
+
+  /* Kicker / eyebrow labels — always uppercase, wide tracking, small */
+  --text-kicker-size: 0.76rem;
+  --text-kicker-weight: 700;
+  --text-kicker-tracking: 0.22em;
+
+  --leading-display: 0.98;      /* headings run tight, near-1 */
+  --leading-body: 1.5;
+
+  --tracking-display: -0.05em;  /* headings pull inward */
+  --tracking-kicker: 0.22em;    /* kickers push outward */
+}

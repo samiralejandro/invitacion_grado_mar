@@ -1,0 +1,6 @@
+/* Pronti — Webfonts
+   Both faces are exact matches already used by the live site (Google Fonts),
+   no substitution needed. Loaded via @import so the whole type system ships
+   from this one stylesheet closure. */
+
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Syne:wght@500;700;800&display=swap");
