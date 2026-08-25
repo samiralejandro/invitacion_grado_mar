@@ -99,21 +99,19 @@ a{color:#b85c4e;text-decoration:none;} a:hover{color:#8f3f33;}
         <div style="position:absolute;top:60%;left:26%;width:7px;height:7px;border-radius:50%;background:rgba(160,150,125,.2);"></div>
       </div>
     </div>
-    <svg viewBox="0 0 1000 560" preserveAspectRatio="xMidYMid slice" style="position:absolute;left:0;top:0;width:100%;height:56%;">
-      <g stroke="rgba(200,218,255,.55)" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M260 160 L320 112 L380 160 L440 112 L500 160"></path>
-        <path d="M655 180 L671 226 L719 227 L680 256 L695 302 L655 274 L615 302 L630 256 L591 227 L639 226 Z"></path>
-        <path d="M420 330 L450 318 L466 296 L474 274 L488 288 L506 320 L516 358 L512 398 L496 432 L472 452 L452 446 L458 428 L476 424 L488 398 L490 362 L482 330 L466 314 L450 318"></path>
+    <svg viewBox="0 0 1000 560" preserveAspectRatio="xMidYMid slice" aria-hidden="true" style="position:absolute;left:0;top:0;width:100%;height:56%;opacity:.82;">
+      <defs>
+        <filter id="constellationGlow" x="-200%" y="-200%" width="500%" height="500%"><feGaussianBlur stdDeviation="2.2" result="blur"></feGaussianBlur><feMerge><feMergeNode in="blur"></feMergeNode><feMergeNode in="SourceGraphic"></feMergeNode></feMerge></filter>
+      </defs>
+      <g fill="none" stroke="rgba(205,222,248,.34)" stroke-width=".9" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke">
+        <path d="M112 192 L154 169 L196 193 L236 161 L276 182"></path>
+        <path d="M386 142 L421 177 L458 161 L485 198 M421 177 L404 216"></path>
+        <path d="M468 286 L501 261 L535 275 L566 246 L601 264 M535 275 L546 310"></path>
       </g>
-      <g fill="rgba(190,215,255,.3)">
-        <circle cx="260" cy="160" r="7"></circle><circle cx="320" cy="112" r="8"></circle><circle cx="380" cy="160" r="7"></circle><circle cx="440" cy="112" r="8"></circle><circle cx="500" cy="160" r="7"></circle>
-        <circle cx="655" cy="180" r="8"></circle><circle cx="719" cy="227" r="7"></circle><circle cx="695" cy="302" r="7"></circle><circle cx="615" cy="302" r="7"></circle><circle cx="591" cy="227" r="7"></circle>
-        <circle cx="420" cy="330" r="7"></circle><circle cx="474" cy="274" r="8"></circle><circle cx="516" cy="358" r="7"></circle><circle cx="496" cy="432" r="7"></circle><circle cx="452" cy="446" r="7"></circle>
-      </g>
-      <g fill="#ffffff">
-        <circle cx="260" cy="160" r="3.2" style="animation:twinkle 3.4s ease-in-out infinite;"></circle><circle cx="320" cy="112" r="4" style="animation:twinkle 4.1s ease-in-out .5s infinite;"></circle><circle cx="380" cy="160" r="3.2" style="animation:twinkle 3.8s ease-in-out 1s infinite;"></circle><circle cx="440" cy="112" r="4" style="animation:twinkle 3.2s ease-in-out 1.4s infinite;"></circle><circle cx="500" cy="160" r="3.2" style="animation:twinkle 4.4s ease-in-out .8s infinite;"></circle>
-        <circle cx="655" cy="180" r="4" style="animation:twinkle 3.5s ease-in-out infinite;"></circle><circle cx="671" cy="226" r="2.4" style="animation:twinkle 4.2s ease-in-out .6s infinite;"></circle><circle cx="719" cy="227" r="3.4" style="animation:twinkle 3.1s ease-in-out 1.2s infinite;"></circle><circle cx="680" cy="256" r="2.4" style="animation:twinkle 3.9s ease-in-out .3s infinite;"></circle><circle cx="695" cy="302" r="3.4" style="animation:twinkle 4.5s ease-in-out 1.6s infinite;"></circle><circle cx="655" cy="274" r="2.4" style="animation:twinkle 3.3s ease-in-out .9s infinite;"></circle><circle cx="615" cy="302" r="3.4" style="animation:twinkle 4s ease-in-out 1.8s infinite;"></circle><circle cx="630" cy="256" r="2.4" style="animation:twinkle 3.6s ease-in-out .4s infinite;"></circle><circle cx="591" cy="227" r="3.4" style="animation:twinkle 4.3s ease-in-out 1.1s infinite;"></circle><circle cx="639" cy="226" r="2.4" style="animation:twinkle 3.7s ease-in-out .7s infinite;"></circle>
-        <circle cx="420" cy="330" r="3.4" style="animation:twinkle 3.5s ease-in-out .2s infinite;"></circle><circle cx="450" cy="318" r="2.6" style="animation:twinkle 4.1s ease-in-out 1.5s infinite;"></circle><circle cx="466" cy="296" r="2.6" style="animation:twinkle 3.2s ease-in-out .8s infinite;"></circle><circle cx="474" cy="274" r="3.6" style="animation:twinkle 4.6s ease-in-out .1s infinite;"></circle><circle cx="488" cy="288" r="2.6" style="animation:twinkle 3.8s ease-in-out 1.9s infinite;"></circle><circle cx="506" cy="320" r="2.6" style="animation:twinkle 3.4s ease-in-out 1.2s infinite;"></circle><circle cx="516" cy="358" r="3.4" style="animation:twinkle 4.2s ease-in-out .5s infinite;"></circle><circle cx="512" cy="398" r="2.6" style="animation:twinkle 3.6s ease-in-out 1.7s infinite;"></circle><circle cx="496" cy="432" r="3.4" style="animation:twinkle 4.4s ease-in-out .9s infinite;"></circle><circle cx="472" cy="452" r="2.6" style="animation:twinkle 3.3s ease-in-out .3s infinite;"></circle><circle cx="452" cy="446" r="3.2" style="animation:twinkle 4s ease-in-out 1.3s infinite;"></circle><circle cx="458" cy="428" r="2.4" style="animation:twinkle 3.7s ease-in-out .6s infinite;"></circle><circle cx="476" cy="424" r="2.4" style="animation:twinkle 4.5s ease-in-out 1s infinite;"></circle><circle cx="488" cy="398" r="2.4" style="animation:twinkle 3.9s ease-in-out 1.6s infinite;"></circle><circle cx="490" cy="362" r="2.4" style="animation:twinkle 3.5s ease-in-out 1.4s infinite;"></circle><circle cx="482" cy="330" r="2.4" style="animation:twinkle 4.3s ease-in-out .4s infinite;"></circle><circle cx="466" cy="314" r="2.4" style="animation:twinkle 3.6s ease-in-out 1.1s infinite;"></circle>
+      <g fill="#eaf2ff" filter="url(#constellationGlow)">
+        <circle cx="112" cy="192" r="2.3" style="animation:twinkle 4.2s ease-in-out infinite;"></circle><circle cx="154" cy="169" r="3.1" style="animation:twinkle 3.8s ease-in-out .7s infinite;"></circle><circle cx="196" cy="193" r="2.2" style="animation:twinkle 4.6s ease-in-out 1.2s infinite;"></circle><circle cx="236" cy="161" r="2.8" style="animation:twinkle 3.6s ease-in-out .3s infinite;"></circle><circle cx="276" cy="182" r="2.1" style="animation:twinkle 4.4s ease-in-out 1.5s infinite;"></circle>
+        <circle cx="386" cy="142" r="2.4"></circle><circle cx="421" cy="177" r="3.2" style="animation:twinkle 4s ease-in-out .5s infinite;"></circle><circle cx="458" cy="161" r="2.2"></circle><circle cx="485" cy="198" r="2.7" style="animation:twinkle 4.5s ease-in-out 1.1s infinite;"></circle><circle cx="404" cy="216" r="2"></circle>
+        <circle cx="468" cy="286" r="2.1"></circle><circle cx="501" cy="261" r="2.8" style="animation:twinkle 3.9s ease-in-out .8s infinite;"></circle><circle cx="535" cy="275" r="2.2"></circle><circle cx="566" cy="246" r="3" style="animation:twinkle 4.3s ease-in-out .2s infinite;"></circle><circle cx="601" cy="264" r="2.1"></circle><circle cx="546" cy="310" r="2.3"></circle>
       </g>
     </svg>
     <div style="position:absolute;left:74%;top:58%;bottom:0;width:110px;transform:translateX(-8%);background:linear-gradient(180deg,rgba(235,240,255,.4),rgba(235,240,255,.08) 60%,rgba(235,240,255,0) 92%);clip-path:polygon(38% 0,62% 0,100% 100%,0 100%);filter:blur(6px);animation:shimmer 5s ease-in-out infinite;"></div>
@@ -184,8 +182,8 @@ a{color:#b85c4e;text-decoration:none;} a:hover{color:#8f3f33;}
     </div>
   </sc-if>
   <sc-if value="{{ esAbierto }}" hint-placeholder-val="{{ false }}">
-    <div style="position:absolute;inset:0;z-index:20;overflow-y:auto;padding:38px 18px 60px;display:flex;flex-direction:column;align-items:center;gap:26px;">
-      <div style="animation:cardIn .9s cubic-bezier(.22,1,.36,1) both;width:min(430px,92vw);background:#fffdf8;border-radius:8px;box-shadow:0 30px 70px rgba(60,80,120,.35);padding:12px;flex-shrink:0;">
+    <div style="position:absolute;inset:0;z-index:20;overflow-y:auto;overflow-x:hidden;box-sizing:border-box;padding:38px 18px 60px;display:flex;flex-direction:column;align-items:center;gap:26px;">
+      <div style="animation:cardIn .9s cubic-bezier(.22,1,.36,1) both;box-sizing:border-box;width:min(430px,92vw);background:#fffdf8;border-radius:8px;box-shadow:0 30px 70px rgba(60,80,120,.35);padding:12px;flex-shrink:0;">
         <div style="position:relative;overflow:hidden;border:1px solid rgba(184,92,78,.3);border-radius:5px;padding:34px 26px;text-align:center;">
           <div style="position:absolute;top:-30px;left:-30px;width:170px;height:170px;border-radius:50%;background:radial-gradient(circle,rgba(155,123,212,.16),rgba(155,123,212,0) 70%);pointer-events:none;"></div>
           <div style="position:absolute;bottom:-40px;right:-40px;width:210px;height:210px;border-radius:50%;background:radial-gradient(circle,rgba(91,131,184,.14),rgba(91,131,184,0) 70%);pointer-events:none;"></div>
@@ -223,7 +221,7 @@ a{color:#b85c4e;text-decoration:none;} a:hover{color:#8f3f33;}
       </div>
       <div style="animation:cardIn .9s cubic-bezier(.22,1,.36,1) .25s both;flex-shrink:0;display:flex;flex-direction:column;align-items:center;">
         <div style="font-size:11px;letter-spacing:.34em;text-transform:uppercase;color:#f3ddc2;text-shadow:0 1px 6px rgba(10,20,45,.5);">Álbum de recuerdos</div>
-        <div style="margin-top:16px;perspective:2600px;width:min(560px,94vw);">
+        <div style="margin-top:16px;perspective:2600px;width:min(560px,calc(100vw - 24px));max-width:100%;">
           <div style="{{ libroStyle }}">
             <div style="{{ tapaDerechaStyle }}"></div>
             <div style="{{ tapaIzquierdaStyle }}"></div>
@@ -241,7 +239,7 @@ a{color:#b85c4e;text-decoration:none;} a:hover{color:#8f3f33;}
                       </div>
                     </sc-if>
                     <sc-if value="{{ hoja.fotosFrente }}" hint-placeholder-val="{{ false }}">
-                      <div style="box-sizing:border-box;width:100%;height:100%;background:#f9f1e2;border-radius:2px 10px 10px 2px;box-shadow:inset 6px 0 12px rgba(120,95,60,.18);padding:16px 16px 12px;display:flex;flex-direction:column;gap:10px;">
+                      <div style="box-sizing:border-box;width:100%;height:100%;overflow:hidden;background:#f9f1e2;border-radius:2px 10px 10px 2px;box-shadow:inset 6px 0 12px rgba(120,95,60,.18);padding:clamp(7px,3vw,16px) clamp(7px,3vw,16px) clamp(6px,2vw,12px);display:flex;flex-direction:column;gap:clamp(5px,2vw,10px);">
                         <div style="{{ hoja.gridFrente }}">
                           <sc-for list="{{ hoja.fotosFrente }}" as="foto" hint-placeholder-count="0">
                             <img src="{{ foto.src }}" alt="" style="{{ foto.st }}">
@@ -256,7 +254,7 @@ a{color:#b85c4e;text-decoration:none;} a:hover{color:#8f3f33;}
                   </div>
                   <div style="{{ hoja.backStyle }}">
                     <sc-if value="{{ hoja.fotosDorso }}" hint-placeholder-val="{{ false }}">
-                      <div style="box-sizing:border-box;width:100%;height:100%;background:#f6ecdb;border-radius:10px 2px 2px 10px;box-shadow:inset -6px 0 12px rgba(120,95,60,.18);padding:16px 16px 12px;display:flex;flex-direction:column;gap:10px;">
+                      <div style="box-sizing:border-box;width:100%;height:100%;overflow:hidden;background:#f6ecdb;border-radius:10px 2px 2px 10px;box-shadow:inset -6px 0 12px rgba(120,95,60,.18);padding:clamp(7px,3vw,16px) clamp(7px,3vw,16px) clamp(6px,2vw,12px);display:flex;flex-direction:column;gap:clamp(5px,2vw,10px);">
                         <div style="{{ hoja.gridDorso }}">
                           <sc-for list="{{ hoja.fotosDorso }}" as="foto" hint-placeholder-count="0">
                             <img src="{{ foto.src }}" alt="" style="{{ foto.st }}">
@@ -285,7 +283,7 @@ a{color:#b85c4e;text-decoration:none;} a:hover{color:#8f3f33;}
             </div>
           </div>
         </div>
-        <div style="margin-top:30px;display:flex;align-items:center;gap:18px;position:relative;z-index:5;">
+        <div style="margin-top:30px;width:min(560px,calc(100vw - 24px));display:flex;align-items:center;justify-content:center;gap:clamp(6px,3vw,18px);position:relative;z-index:5;">
           <button onClick="{{ hojaAtras }}" style="{{ navBtnStyle }}">‹ Anterior</button>
           <div style="font-size:11px;letter-spacing:.22em;color:rgba(240,228,200,.8);">{{ paginaTexto }}</div>
           <button onClick="{{ hojaAdelante }}" style="{{ navBtnStyle }}">Siguiente ›</button>
@@ -335,12 +333,12 @@ class Component extends DCLogic {
     const mkFotos = (c) => c ? c.fotos.map((src, ix, arr) => ({
       src,
       st: Object.assign(
-        { width: '100%', height: '100%', objectFit: 'cover', borderRadius: '3px', minHeight: 0, display: 'block' },
+        { width: '100%', height: '100%', maxWidth: '100%', maxHeight: '100%', objectFit: 'cover', borderRadius: '3px', minWidth: 0, minHeight: 0, display: 'block' },
         arr.length === 3 && ix === 0 ? { gridColumn: '1 / -1' } : {}
       )
     })) : undefined;
     const mkGrid = (c) => c ? {
-      flex: 1, minHeight: 0, display: 'grid', gap: '8px',
+      flex: 1, minWidth: 0, minHeight: 0, overflow: 'hidden', display: 'grid', gap: 'clamp(4px,1.6vw,8px)',
       gridTemplateColumns: c.fotos.length === 1 ? '1fr' : '1fr 1fr', gridAutoRows: '1fr'
     } : undefined;
     const defs = [];
@@ -366,7 +364,7 @@ class Component extends DCLogic {
           girar(volteada ? vueltas - 1 : vueltas + 1);
         },
         style: {
-          position: 'absolute', top: 0, left: '50%', width: '50%', height: '100%',
+          position: 'absolute', top: 0, left: '50%', width: '50%', height: '100%', minWidth: 0, overflow: 'hidden', boxSizing: 'border-box',
           transformOrigin: 'left center', cursor: 'pointer',
           transform: 'scaleX(' + (volteada ? -1 : 1) + ')',
           transition: 'transform .72s cubic-bezier(.45,.05,.3,1), opacity .35s ease ' + (abierto ? '.1s' : '.3s'),
@@ -374,12 +372,12 @@ class Component extends DCLogic {
           zIndex: (this.state.girando === i) ? 40 : (volteada ? 20 + i : totalHojas + 10 - i)
         },
         frontStyle: {
-          position: 'absolute', inset: 0,
+          position: 'absolute', inset: 0, minWidth: 0, overflow: 'hidden', boxSizing: 'border-box',
           opacity: volteada ? 0 : 1, transition: 'opacity 0s linear .36s',
           pointerEvents: volteada ? 'none' : 'auto'
         },
         backStyle: {
-          position: 'absolute', inset: 0,
+          position: 'absolute', inset: 0, minWidth: 0, overflow: 'hidden', boxSizing: 'border-box',
           transform: 'scaleX(-1)',
           opacity: volteada ? 1 : 0, transition: 'opacity 0s linear .36s',
           pointerEvents: volteada ? 'auto' : 'none'
@@ -387,7 +385,7 @@ class Component extends DCLogic {
       });
     });
     const libroStyle = {
-      position: 'relative', width: '100%', aspectRatio: '10 / 7',
+      position: 'relative', width: '100%', maxWidth: '100%', aspectRatio: '10 / 7',
       transform: abierto ? 'translateX(0)' : 'translateX(-25%)',
       transition: 'transform .9s cubic-bezier(.4,.05,.2,1)'
     };
@@ -413,8 +411,8 @@ class Component extends DCLogic {
       hojaAdelante: () => girar(vueltas + 1),
       paginaTexto: vueltas === 0 ? 'Portada' : vueltas >= totalHojas ? 'Fin' : 'Página ' + vueltas + ' de ' + (totalHojas - 1),
       navBtnStyle: {
-        padding: '8px 18px', borderRadius: '999px', border: '1px solid rgba(240,228,200,.4)',
-        background: 'rgba(20,40,75,.5)', color: '#f3e4c0', fontSize: '11px', letterSpacing: '.14em',
+        padding: '8px clamp(10px,4vw,18px)', borderRadius: '999px', border: '1px solid rgba(240,228,200,.4)',
+        background: 'rgba(20,40,75,.5)', color: '#f3e4c0', fontSize: 'clamp(9px,2.8vw,11px)', letterSpacing: 'clamp(.06em,.4vw,.14em)',
         textTransform: 'uppercase', cursor: 'pointer', fontFamily: "'Jost',sans-serif"
       }
     };
